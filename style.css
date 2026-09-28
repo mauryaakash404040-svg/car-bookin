@@ -1,0 +1,438 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0d10;
+  color: white;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 22px 24px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+.logo {
+
+  font-size: 28px;
+
+  font-weight: 800;
+
+}
+
+.logo span {
+
+  color: #ffb000;
+
+}
+
+.nav-links {
+
+  display: flex;
+
+  gap: 28px;
+
+  color: #ddd;
+
+}
+
+.nav-links a:hover {
+
+  color: #ffb000;
+
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+
+  min-height: 80vh;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 80px 8%;
+
+  background:
+
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.9),
+      rgba(0,0,0,.35)
+    ),
+
+    url(
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=85"
+    )
+
+    center / cover;
+
+}
+
+.hero h1 {
+
+  font-size: clamp(
+    48px,
+    7vw,
+    88px
+  );
+
+  line-height: 1;
+
+  margin: 15px 0;
+
+}
+
+.hero h1 span {
+
+  color: #ffb000;
+
+}
+
+.hero-content > p:not(.tag) {
+
+  max-width: 540px;
+
+  color: #ccc;
+
+  margin-bottom: 28px;
+
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn,
+.book-btn {
+
+  display: inline-block;
+
+  border: 0;
+
+  background: #ffb000;
+
+  color: #111;
+
+  padding: 13px 24px;
+
+  border-radius: 8px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+}
+
+.btn:hover,
+.book-btn:hover {
+
+  transform: translateY(-2px);
+
+}
+
+
+/* ================= COMMON ================= */
+
+.tag {
+
+  color: #ffb000;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+
+}
+
+.section {
+
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 90px 24px;
+
+}
+
+.section-title {
+
+  margin-bottom: 35px;
+
+}
+
+h2 {
+
+  font-size: 44px;
+
+  margin-top: 8px;
+
+}
+
+
+/* ================= CARDS ================= */
+
+.car-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 24px;
+
+}
+
+.car-card {
+
+  background: #15181d;
+
+  border: 1px solid #262a30;
+
+  border-radius: 16px;
+
+  overflow: hidden;
+
+}
+
+.car-card img {
+
+  width: 100%;
+
+  height: 230px;
+
+  object-fit: cover;
+
+  display: block;
+
+}
+
+.car-info {
+
+  padding: 22px;
+
+}
+
+.car-info h3 {
+
+  font-size: 25px;
+
+}
+
+.car-info p {
+
+  color: #9ca3af;
+
+}
+
+.price {
+
+  color: #ffb000;
+
+  font-size: 24px;
+
+  margin: 16px 0;
+
+}
+
+.price small {
+
+  color: #888;
+
+  font-size: 14px;
+
+}
+
+
+/* ================= BOOKING ================= */
+
+.booking-section {
+
+  background: #111419;
+
+  padding: 90px 24px;
+
+}
+
+.booking-wrap {
+
+  max-width: 1000px;
+
+  margin: auto;
+
+}
+
+.booking-wrap > div {
+
+  margin-bottom: 30px;
+
+}
+
+.muted {
+
+  color: #9ca3af;
+
+}
+
+form {
+
+  background: #191c22;
+
+  padding: 30px;
+
+  border-radius: 16px;
+
+  border: 1px solid #2b3038;
+
+}
+
+.form-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 20px;
+
+}
+
+.full {
+
+  grid-column: 1 / -1;
+
+}
+
+label {
+
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #ddd;
+
+}
+
+input,
+select,
+textarea {
+
+  width: 100%;
+
+  padding: 13px;
+
+  border: 1px solid #343a43;
+
+  border-radius: 8px;
+
+  background: #0d0f13;
+
+  color: white;
+
+  outline: none;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+
+  border-color: #ffb000;
+
+}
+
+.submit-btn {
+
+  margin-top: 22px;
+
+}
+
+#formMessage {
+
+  margin-top: 15px;
+
+  font-weight: bold;
+
+}
+
+.success {
+
+  color: #45e08b;
+
+}
+
+.error {
+
+  color: #ff6b6b;
+
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+
+  padding: 25px;
+
+  text-align: center;
+
+  color: #777;
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+  .nav-links {
+
+    gap: 10px;
+
+    font-size: 14px;
+
+  }
+
+  .car-grid,
+  .form-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .full {
+
+    grid-column: auto;
+
+  }
+
+}
